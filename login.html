@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | The Tolet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    .auth-container {
+      background: white;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .auth-top-section {
+      background: #e3f0ff;
+      padding: 79px 20px 79px;
+      position: relative;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    }
+
+    .auth-top-section img {
+      margin-bottom: 8px;
+    }
+
+    .auth-top-section h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .auth-top-section p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .auth-content {
+      padding: 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .auth-content h2 {
+      color: #1f67bb;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .login-input {
+      margin-bottom: 20px;
+    }
+
+    .login-input label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .login-input input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .recovery-link {
+      text-align: right;
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .submit-button {
+      background: #1f67bb;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .separator {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .external-auth-options {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    .external-auth-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #f5f5f5;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .external-auth-btn img {
+      height: 20px;
+      margin-right: 8px;
+    }
+
+    .signup-prompt {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .signup-prompt a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-top-section">
+      <img src="https://nsmlimited.com/assets/images/logo/nsm-logo-final.png" alt="Logo" width="120" />
+    </div>
+    <div class="auth-content">
+      <h2>Login</h2>
+      <div class="login-input">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="login-input">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+      <div class="recovery-link">Forgot Password?</div>
+      <button class="submit-button">Log In</button>
+      <div class="separator">Or</div>
+      <div class="external-auth-options">
+        <div class="external-auth-btn">
+          <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">continue with Google
+        </div>
+        <div class="external-auth-btn">
+          <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook">continue with Linkedin
+        </div>
+      </div>
+      <div class="signup-prompt">
+        Don't have account? <a href="#">Create now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
